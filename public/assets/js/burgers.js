@@ -1,0 +1,1 @@
+// This is where you define your front-end AJAX calls that will be used by the controller based on url routing
