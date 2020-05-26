@@ -1,6 +1,6 @@
 // Dependencies
 const express = require('express');
-require("dotenv").config();
+// REMOVED REQUIRE('DOTENV').CONFIG()
 
 // Set up the Express App
 const app = express();
