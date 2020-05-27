@@ -2,6 +2,8 @@
 const connection = require('./connection.js');
 
 // write update/delete functions (video 0:47, 1:22, 2:00)
+
+// MAY USE THE FOLLOWING HELPER FUNCTION?????? From cats orm.js
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
     var arr = [];
