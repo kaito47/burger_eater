@@ -40,10 +40,6 @@ let orm = {
         // add input string as burger_name value into burgers table
         let queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
 
-        // let queryString = "INSERT INTO burgers (burger_name)";
-        // queryString += "VALUES (";
-        // queryString += "?";
-        // queryString += ") ";
         console.log(queryString);
         connection.query(queryString, vals, function (err, result) {
             if (err) {
@@ -52,7 +48,7 @@ let orm = {
             cb(result);
         })
     },
-    // got rid of "id" as argument and in connection.query 
+
     update: function (id, cb) {
         // Set 'devoured' condition to true based on id
         let queryString = "UPDATE burgers SET devoured = true WHERE id = ?;";

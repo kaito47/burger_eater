@@ -25,11 +25,6 @@ router.post('/api', function (req, res) {
 });
 
 router.put('/api/:id', function (req, res) {
-    // QUESTION: because this has the condition as the id should I remove the id in the orm method?
-    // let condition = "id = " + req.params.id;
-
-    // console.log("condition", condition);
-    // console.log(req.body.devoured)
 
     burgers.update(req.params.id, function (result) {
         if (result.changedRows == 0) {
