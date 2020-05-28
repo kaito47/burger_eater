@@ -4,10 +4,10 @@ const express = require('express');
 
 // Set up the Express App
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8070;
 
 // Serve static content for the app from the "public" directory in the application directory
-app.use(express.static('app/public'));
+app.use(express.static('./public'));
 
 // Set up the Express App to handle data parsing
 app.use(express.urlencoded({ extended: true }))

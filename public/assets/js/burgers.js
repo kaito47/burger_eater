@@ -6,7 +6,9 @@ $(document).ready(function () {
         event.preventDefault();
 
         let newBurger = {
-            name: $("#order").val().trim(),
+            //NOT SURE WHAT THE KEY SHOULD BE HERE..NAME? 
+            burger_name: $("#burger").val().trim(),
+            devoured: false
         };
 
         // Send the POST request.
@@ -26,10 +28,11 @@ $(document).ready(function () {
     $(function () {
         $(".devoured").on("click", function (event) {
             let id = $(this).data("id");
-            let newDevoured = $(this).data("newDevoured");
+            console.log(id);
+            //let newDevoured = $(this).data("newDevoured");
 
             let devouredList = {
-                devoured: newDevoured
+                devoured: true
             };
 
             // Send the PUT request.
@@ -37,7 +40,7 @@ $(document).ready(function () {
                 type: "PUT",
                 data: devouredList,
                 function() {
-                    console.log("changed burger to", newDevoured);
+                    console.log("changed burger to", devouredList);
                     // Reload the page to get the updated list
                     location.reload();
                 }
