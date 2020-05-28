@@ -1,0 +1,9 @@
+{
+    "development": {
+        "username": "h4yhcel14myjligw",
+        "password": "e49ezlv6meuqfiz3",
+        "database": "a5hhg5rjtebx660u",
+        "host": "s3lkt7lynu0uthj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql"
+    }
+}
