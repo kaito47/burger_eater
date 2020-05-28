@@ -13,8 +13,8 @@ let burger = {
             cb(res);
         });
     },
-    update: function (condition, id, cb) {
-        orm.update(condition, id, function (res) {
+    update: function (id, cb) {
+        orm.update(id, function (res) {
             cb(res);
         });
     },

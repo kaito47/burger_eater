@@ -39,7 +39,7 @@ $(document).ready(function () {
             $.ajax("/api/" + id, {
                 type: "PUT",
                 data: devouredList,
-                function() {
+                success: function () {
                     console.log("changed burger to", devouredList);
                     // Reload the page to get the updated list
                     location.reload();
