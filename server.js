@@ -3,7 +3,7 @@ const express = require('express');
 // REMOVED REQUIRE('DOTENV').CONFIG()
 
 // Set up the Express App
-const app = express();
+let app = express();
 const PORT = process.env.PORT || 8070;
 
 // Serve static content for the app from the "public" directory in the application directory
