@@ -1,7 +1,13 @@
-h3 {
-    text-align: center;
-}
-
-font {
-    background-color: blue;
+body {
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.health.harvard.edu%2Fblog%2Fimpossible-and-beyond-how-healthy-are-these-meatless-burgers-2019081517448&psig=AOvVaw0aKIpc9H9ZFhFCC6x1xKL-&ust=1590790484941000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj9wcDK1-kCFQAAAAAdAAAAABAD");
+    height: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-attachment: fixed;
+    background-position: center bottom 1%;
+    background-size: 75%;
+    max-width: 95%;
 }
